@@ -1,0 +1,6 @@
+#block-marki-block-marki {overflow: hidden; border-top: 4px solid red; border-bottom: 4px solid red; 
+padding-top: 5px; padding-bottom: 5px; margin-top: 20px !important; margin-botom: 20px !important; }
+#block-marki-block-marki > div.content {height: inherit;}
+
+#marki > img {padding: 10px; float: left; display: block; padding-left: 30px; padding-right: 30px; }
+#marki {width: 5200px;}

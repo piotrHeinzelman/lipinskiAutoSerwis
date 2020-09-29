@@ -1,0 +1,4 @@
+#block-malefoty-block-malefoty > div.content {height: inherit; margin-bottom: 4%; margin-top: -10px; }
+#block-malefoty-block-malefoty > div.content > a:first-child{float: left; margin-left: -45px;  }
+#block-malefoty-block-malefoty > div.content > a{ margin: 0px auto; margin-left: 45px; }
+#block-malefoty-block-malefoty > div.content > a:last-child{float: right; margin-right: -45px; }
