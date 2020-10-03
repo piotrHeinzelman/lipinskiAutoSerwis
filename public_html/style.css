@@ -188,3 +188,97 @@ padding: 32px;
     font-style: normal;
 }
 
+
+
+
+
+
+
+
+.node-unpublished {
+  background-color: #fff4f4;
+}
+.preview .node {
+  background-color: #ffffea;
+}
+td.revision-current {
+  background: #ffc;
+}
+
+
+div#block-mytheme-block-mytheme > div.content > div#Ban > a {display: nones; position: absolute; opacity: 0;}
+
+div#block-mytheme-block-mytheme > div.content > div#Ban > a:first-child  {opacity: 1;}
+
+ div#Banner_OVER  > a { position: absolute;}
+ div#Banner_OVER {z-index: 10; position: absolute; left: 50px;}
+
+
+div#block-mytheme-block-mytheme > div.content > a:first-child  {display: block;}
+
+h2 { font-family: verdana !important ; font-size: 22px!important;  line-height: 26px!important; font-weight: bold;}
+
+h1.p {font-size: 15px !important; font-weight: normal !important; line-height: 14px !important; font-family: verdana !important;}
+
+
+
+
+#block-marki-block-marki {overflow: hidden; border-top: 4px solid red; border-bottom: 4px solid red;
+padding-top: 5px; padding-bottom: 5px; margin-top: 20px !important; margin-botom: 20px !important; }
+#block-marki-block-marki > div.content {height: inherit;}
+
+#marki > img {padding: 10px; float: left; display: block; padding-left: 30px; padding-right: 30px; }
+#marki {width: 5200px;}
+
+
+#block-malefoty-block-malefoty > div.content {height: inherit; margin-bottom: 4%; margin-top: -10px; }
+#block-malefoty-block-malefoty > div.content > a:first-child{float: left; margin-left: -45px;  }
+#block-malefoty-block-malefoty > div.content > a{ margin: 0px auto; margin-left: 45px; }
+#block-malefoty-block-malefoty > div.content > a:last-child{float: right; margin-right: -45px; }
+
+
+
+/* Field display */
+.field .field-label {
+  font-weight: bold;
+}
+.field-label-inline .field-label,
+.field-label-inline .field-items {
+  float:left; /*LTR*/
+}
+
+/* Form display */
+form .field-multiple-table {
+  margin: 0;
+}
+form .field-multiple-table th.field-label {
+  padding-left: 0; /*LTR*/
+}
+form .field-multiple-table td.field-multiple-drag {
+  width: 30px;
+  padding-right: 0; /*LTR*/
+}
+form .field-multiple-table td.field-multiple-drag a.tabledrag-handle {
+  padding-right: .5em; /*LTR*/
+}
+
+form .field-add-more-submit {
+  margin: .5em 0 0;
+}
+
+
+#block-foot-block-foot > div.content > p {  width: 33% !important;  color: #808080; font-size: 11px; line-height: 15px !important; float: left; padding: 0px; margin: 0px; display: block; }
+#block-foot-block-foot > div.content > p > a {color: #808080;}
+#block-foot-block-foot > div.content > p > a:hover {color: white}
+
+
+
+
+#block-foot-block-foot > div.content { height: inherit; margin-bottom: 0px; padding-bottom: 5px; padding-top: 5px; margin-top: 5px;;  }
+#block-foot-block-foot {margin: 0px; padding: 0px; }
+#footer { padding-bottom: 12px !important; padding-top: 12px !important; height: 55px; }
+
+
+#block-foot-block-foot > div.content > p {text-align: center; }
+#block-foot-block-foot > div.content > p:first-child {text-align: left; }
+#block-foot-block-foot > div.content > p:last-child {text-align: right; }
