@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr" >
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta>
+  <title>Auto Serwis Piotr Lipiński | lipinskiautoserwis.pl</title>
+    <link rel="stylesheet" th:href="@{'/styles/style.css'}"  type="text/css" media="all"/>
+
+    <script type="text/javascript" th:src="@{'/styles/jquery.js'}"></script>
+    <script type="text/javascript" th:src="@{'/styles/jquery.once.js'}"></script>
+    <script type="text/javascript" th:src="@{'/styles/marki.js'}" ></script>
+    <script type="text/javascript" th:src="@{'/styles/script.js'}" ></script>
+
+</head>
+<body>
+
+
+    <a id="header" th:href="@{'/home'}">
+        <img th:src="@{'/images/logo.png'}" alt="Home">
+    </a>
+
+
+
+    <div class="content">
+        <div id="Banner_OVER"></div>
+        <div id="Ban">
+            <img id="banner_ID_1" th:src="@{'/images/banner1.jpg'}"/>
+            <img id="banner_ID_2" th:src="@{'/images/banner2.jpg'}"/>
+            <img id="banner_ID_3" th:src="@{'/images/banner3.jpg'}"/>
+            <img id="banner_ID_4" th:src="@{'/images/banner4.jpg'}"/>
+            <img id="banner_ID_5" th:src="@{'/images/banner5.jpg'}"/>
+        </div>
+    </div>
+
+
+    <div id="menu">
+        <a th:href="@{'/home'}" class="active-trail active">O nas</a>
+        <a th:href="@{'/kontakt'}" title="Kontakt">Kontakt</a>
+        <a th:href="@{'/dojazd'}" title="dojazd">Dojazd</a>
+        <a th:href="@{'/wulkanizacja'}" title="wulkanizacja">Wulkanizacja</a>
+    </div>
+
+
+    <div id="images">
+        <img th:src="@{'/images/img1.jpg'}">
+        <img th:src="@{'/images/img2.jpg'}">
+        <img th:src="@{'/images/img3.jpg'}">
+    </div>
+
+
+    <div>
+        <h1 th:text="${title}"></h1>
+        <h2 th:utext="${lead}"></h2>
+        <p  th:utext="${text}"</p>
+        <h2 th:utext="${lead2}"></h2>
+        <p  th:utext="${text2}"</p>
+    </div>
+
+
+    <div id="marki_container">
+        <div id="marki">
+
+            <img th:src="@{'images/acura.jpg'}"/>
+            <img th:src="@{'images/alfaromeo.jpg'}"/>
+            <img th:src="@{'images/audi.jpg'}"/>
+            <img th:src="@{'images/bentley.jpg'}"/>
+            <img th:src="@{'images/bmw.jpg'}"/>
+            <img th:src="@{'images/buick.jpg'}"/>
+            <img th:src="@{'images/cadillac.jpg'}"/>
+            <img th:src="@{'images/chewrolet.jpg'}"/>
+            <img th:src="@{'images/chrysler.jpg'}"/>
+            <img th:src="@{'images/citroen.jpg'}"/>
+            <img th:src="@{'images/daewoo.jpg'}"/>
+            <img th:src="@{'images/dodge.jpg'}"/>
+            <img th:src="@{'images/ferrari.jpg'}"/>
+            <img th:src="@{'images/fiat.jpg'}"/>
+            <img th:src="@{'images/honda.jpg'}"/>
+            <img th:src="@{'images/hyundai.jpg'}"/>
+            <img th:src="@{'images/infiniti.jpg'}"/>
+            <img th:src="@{'images/Jaguar.jpg'}"/>
+            <img th:src="@{'images/lamborgini.jpg'}"/>
+            <img th:src="@{'images/lexus.jpg'}"/>
+            <img th:src="@{'images/maserati.jpg'}"/>
+            <img th:src="@{'images/mazda.jpg'}"/>
+            <img th:src="@{'images/mercedes.jpg'}"/>
+            <img th:src="@{'images/mitsubishi.jpg'}"/>
+            <img th:src="@{'images/nissan.jpg'}"/>
+            <img th:src="@{'images/opel.jpg'}"/>
+            <img th:src="@{'images/peugeot.jpg'}"/>
+            <img th:src="@{'images/pontiac.jpg'}"/>
+            <img th:src="@{'images/porshe.jpg'}"/>
+            <img th:src="@{'images/renault.jpg'}"/>
+            <img th:src="@{'images/Saab.jpg'}"/>
+            <img th:src="@{'images/seat.jpg'}"/>
+            <img th:src="@{'images/subaru.jpg'}"/>
+            <img th:src="@{'images/suzuki.jpg'}"/>
+            <img th:src="@{'images/toyota.jpg'}"/>
+            <img th:src="@{'images/toyota1.jpg'}"/>
+            <img th:src="@{'images/vauxhall.jpg'}"/>
+            <img th:src="@{'images/volkswagen.jpg'}"/>
+            <img th:src="@{'images/volvo.jpg'}"/>
+        </div>
+    </div>
+
+
+    <div id="footer"> LipinskiAutoSerwis.pl</div>
+
+
+</body></html>
