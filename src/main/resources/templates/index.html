@@ -1,10 +1,9 @@
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr" >
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<meta>
-  <title>Auto Serwis Piotr Lipiński | lipinskiautoserwis.pl</title>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>Auto Serwis Piotr Lipiński | lipinskiautoserwis.pl</title>
     <link rel="stylesheet" th:href="@{'/styles/style.css'}"  type="text/css" media="all"/>
 
     <script type="text/javascript" th:src="@{'/styles/jquery.js'}"></script>
@@ -52,9 +51,9 @@
     <div>
         <h1 th:text="${title}"></h1>
         <h2 th:utext="${lead}"></h2>
-        <p  th:utext="${text}"</p>
+        <p  th:utext="${text}"></p>
         <h2 th:utext="${lead2}"></h2>
-        <p  th:utext="${text2}"</p>
+        <p  th:utext="${text2}"></p>
     </div>
 
 
