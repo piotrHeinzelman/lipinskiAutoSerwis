@@ -2,17 +2,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.heinzelman</groupId>
 	<artifactId>lipinski</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>lipinski</name>
-	<description>LipinskiAutoService</description>
+	<description>LipinskiAutoService war</description>
+	<url>http://maven.apache.org</url>
+
+	<packaging>war</packaging>
 
 	<properties>
 		<java.version>14</java.version>
@@ -49,10 +54,60 @@
 			</plugin>
 
 
+
+
 			<plugin>
 				<groupId>com.heroku.sdk</groupId>
 				<artifactId>heroku-maven-plugin</artifactId>
 				<version>3.0.3</version>
+				<configuration>
+					<appName>lipinskiautoserwis</appName>
+					<processTypes>
+						<web>java $JAVA_OPTS -cp target/classes:target/dependency/* com.heinzelman.lipinski.LipinskiApplication</web>
+					</processTypes>
+					<!--
+					<warFile>target/lipinski.war</warFile>
+					-->
+
+
+					<!--
+					<artifacts>
+						<artifact>com.example:example-app:jar::${project.version}</artifact>
+					</artifacts>
+
+					<procfile>web: java -Xmx256m -jar ./example-app.jar \${PORT}</procfile>
+					-->
+
+
+					<!--
+
+					<configVars>
+  						<MY_VAR>SomeValue</MY_VAR>
+  						<JAVA_OPTS>-Xss512k -XX:+UseCompressedOops</JAVA_OPTS>
+					</configVars>
+
+					<includes>
+  						<include>etc/readme.txt</include>
+					</includes>
+
+					<warFile>relative/path/myapp.war</warFile>
+
+
+					-->
+
+
+
+
+				</configuration>
+				<!--
+				<executions>
+					<execution>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
+				-->
 			</plugin>
 
 		</plugins>
