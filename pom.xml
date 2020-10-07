@@ -7,7 +7,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.3.4.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 
 	<groupId>com.heinzelman</groupId>
@@ -17,11 +17,7 @@
 	<description>LipinskiAutoService war</description>
 	<url>http://maven.apache.org</url>
 
-	<!--
-	<packaging>war</packaging>
-	-->
-
-
+	<!--  <packaging>war</packaging>  -->
 	<!--
 	<properties>
 		<java.version>14</java.version>
@@ -70,11 +66,8 @@
 					<processTypes>
 						<web>java $JAVA_OPTS -cp target/classes:target/dependency/* com.heinzelman.lipinski.LipinskiApplication</web>
 					</processTypes>
-					<!--
-					<warFile>target/lipinski.war</warFile>
-					-->
 
-
+					<!-- <warFile>target/lipinski.war</warFile> -->
 					<!--
 					<artifacts>
 						<artifact>com.example:example-app:jar::${project.version}</artifact>
@@ -85,7 +78,6 @@
 
 
 					<!--
-
 					<configVars>
   						<MY_VAR>SomeValue</MY_VAR>
   						<JAVA_OPTS>-Xss512k -XX:+UseCompressedOops</JAVA_OPTS>
@@ -96,13 +88,7 @@
 					</includes>
 
 					<warFile>relative/path/myapp.war</warFile>
-
-
 					-->
-
-
-
-
 				</configuration>
 				<!--
 				<executions>
