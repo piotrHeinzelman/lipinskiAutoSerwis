@@ -18,11 +18,11 @@
 	<url>http://maven.apache.org</url>
 
 	<!--  <packaging>war</packaging>  -->
-	<!--
+
 	<properties>
-		<java.version>14</java.version>
+		<java.version>8</java.version>
 	</properties>
-	-->
+
 
 	<dependencies>
 		<dependency>
