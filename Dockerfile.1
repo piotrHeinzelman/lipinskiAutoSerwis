@@ -23,6 +23,40 @@ docker run -p 8000:8080 lipinski
 
 
 
+
+Docker Compose – przykład wykorzystania DNS
+W przypadku Docker Compose konfigurowana jest jedna sieć dla aplikacji. Każdy kontener dla usługi dołącza do domyślnej sieci i jest dostępny zarówno dla innych kontenerów w tej sieci oraz inne kontenery mogą go odnaleźć pod nazwą hosta identyczną do nazwy kontenera. Sieć aplikacji otrzymuje nazwę opartą na nazwie projektu (która wzoruje się na nazwie katalogu w którym projekt jest zawarty). Nazwę projektu można podmienić przy użyciu flagi:
+
+-project-name
+
+lub używając zmienną środowiskową COMPOSE_PROJECT_NAME.
+Przy założeniu, że aplikacja znajduje się w katalogu SpringApp plik docker-compose.yml zawiera treść:
+    version: "3"
+    services:
+	  web:
+	    build: .
+	    ports:
+	      - "8000:8000"
+	  db:
+	    image: postgres
+	    ports:
+	    - "8001:5432"
+
+Można wywnioskować, że po wykonaniu polecenia docker-compose up wykonają się następujące czynności:
+
+    Zostanie utworzona sieć o nazwie SpringApp_default
+    Kontener zostanie utworzony przy użyciu konfiguracji paramentu „web”. Dołącza on do sieci SpringApp_default pod nazwą „web”.
+    Kontener zostanie utworzony przy użyciu konfiguracji paramentu „db”. Dołącza on do sieci SpringApp_default pod nazwą „db”.
+
+Każdy kontener może teraz wyszukać „web” bądź „db” i otrzymać adres IP odpowiedniego kontenera.
+Na przykład kod aplikacji „web” może połączyć się z adresem URL postgres://db:5432 i rozpocząć korzystanie z bazy danych Postgres.
+
+
+
+
+
+
+
 You can then run and build the Docker image:
 
 $ docker build -t my-java-app .
